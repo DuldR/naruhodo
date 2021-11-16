@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+Kanji.create!(meaning: "Power", stroke_count: 2, character: "力")
