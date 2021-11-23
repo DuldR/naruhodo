@@ -33,6 +33,7 @@ default: &default
     - .woff2
 
   extensions:
+    - .tsx
     - .jsx
     - .mjs
     - .js
