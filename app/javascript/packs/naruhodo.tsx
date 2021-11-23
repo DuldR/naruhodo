@@ -8,9 +8,8 @@ import ReactDOM from 'react-dom'
 import { App } from '../components/app.tsx'
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-
-    // <App />
-  )
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   ReactDOM.render(
+//     // <App />
+//   )
+// })
