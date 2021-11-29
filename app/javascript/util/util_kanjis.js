@@ -1,6 +1,5 @@
-
 export const getKanjis = () => {
-    return $for.ajax({
+    return $.ajax({
         method: "GET",
         url: '/api/kanjis/'
     })

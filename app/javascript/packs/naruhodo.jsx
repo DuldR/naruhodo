@@ -8,10 +8,19 @@ import ReactDOM from 'react-dom'
 import { Root } from '../components/root.jsx'
 import ConfigureStore from "../store/store.js"
 
+import * as kanji from '../actions/kanji_actions'
+import * as apiKanji from '../util/util_kanjis'
+
+window.kanji = kanji
+window.apiKanji = apiKanji
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById("root")
     const store = ConfigureStore();
+    window.store = store;
 
     ReactDOM.render(<Root store={store} />, root)
 })
+
+
