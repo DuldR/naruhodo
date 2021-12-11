@@ -9,7 +9,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    fetchKanjis: () => dispatch(fetchKanjis)
+    fetchKanjis: () => dispatch(fetchKanjis())
 })
 
 export default connect(null, mapDispatchToProps)(KanjiIndex)

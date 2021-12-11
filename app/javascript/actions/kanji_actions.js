@@ -20,7 +20,6 @@ export const receiveOneKanji = (kanji) => {
 
 export const fetchKanjis = () => (dispatch) => {
     return APIUtil.getKanjis().then(kanjis => {
-        console.log(kanjis)
         dispatch(receiveKanjis(kanjis))
     })
 }
