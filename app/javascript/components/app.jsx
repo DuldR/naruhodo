@@ -1,9 +1,10 @@
 import * as React from "react"
+import KanjiIndexContainer from './kanjis/kanji_index_container'
 
 
 const App = () => (
 
-    <h1>Test</h1>
+    <KanjiIndexContainer />
 
 )
 

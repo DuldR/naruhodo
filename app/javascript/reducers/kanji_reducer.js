@@ -2,8 +2,6 @@ import {RECEIVE_ONE_KANJI, RECEIVE_KANJIS } from './../actions/kanji_actions'
 
 const kanjiReducer = (state = {}, action) => {
     Object.freeze(state);
-
-    console.log(action)
     
     switch(action.type) {
         case RECEIVE_KANJIS:
