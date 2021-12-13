@@ -18,7 +18,7 @@ class KanjiIndex extends React.Component {
 
         const listKanji = this.props.kanjis.map((kanji, idx) => {
             return <li key={idx+kanji}>
-                {kanji.meaning}
+                {kanji.character}
             </li>
         })
 

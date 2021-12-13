@@ -7,4 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Kanji.create!(meaning: "Power", stroke_count: 2, character: "力")
+kanji_list = IO.readlines('/home/garrett/Documents/TestBed/naruhodo/db/kanji_list/kanji.txt')
+kanjis = kanji_list[0].split
+
+kanjis.each do |x|
+    Kanji.create!(meaning: "test", character: x, stroke_count: 0)
+end
+
+# Kanji.create!(meaning: "Power", stroke_count: 2, character: "力")

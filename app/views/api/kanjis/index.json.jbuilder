@@ -1,7 +1,7 @@
 @kanjis.each do |kanji|
 
     json.set! kanji.id do
-        json.extract! kanji, :id, :meaning, :stroke_count
+        json.extract! kanji, :id, :meaning, :stroke_count, :character
     end
 
 
