@@ -4,7 +4,7 @@ import kanjiReducer from './kanji_reducer';
 
 
 const rootReducer = combineReducers({
-    kanji: kanjiReducer,
+    kanjis: kanjiReducer,
 })
 
 export default rootReducer;
