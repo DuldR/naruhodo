@@ -8,7 +8,6 @@ class KanjiIndex extends React.Component {
     }
 
     componentDidMount() {
-        console.log("Fired")
         this.props.fetchKanjis();
     }
 

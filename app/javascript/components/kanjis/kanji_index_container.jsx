@@ -6,10 +6,12 @@ import KanjiIndex from './kanji_index'
 
 const mapStateToProps = state => ({
 
+    kanjis: state.kanji
+
 })
 
 const mapDispatchToProps = dispatch => ({
     fetchKanjis: () => dispatch(fetchKanjis())
 })
 
-export default connect(null, mapDispatchToProps)(KanjiIndex)
+export default connect(mapStateToProps, mapDispatchToProps)(KanjiIndex)
