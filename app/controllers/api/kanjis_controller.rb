@@ -13,7 +13,7 @@ class Api::KanjisController < ApplicationController
     private 
 
     def kanji_params
-        params.require(:kanji).permit(:meaning, :stroke_count)
+        params.require(:kanji).permit(:meaning, :stroke_count, :character)
     end
 
 

@@ -1,1 +1,1 @@
-@kanji
+json.extract! @kanji, :id, :meaning, :stroke_count, :character

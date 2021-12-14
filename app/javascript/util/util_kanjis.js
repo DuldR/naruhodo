@@ -4,3 +4,10 @@ export const getKanjis = () => {
         url: '/api/kanjis/'
     })
 }
+
+export const getOneKanji = (kanjiId) => {
+    return $.ajax({
+        method: "GET",
+        url: `/api/kanjis/${kanjiId}`
+    })
+}

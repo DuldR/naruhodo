@@ -15,6 +15,8 @@ window.kanji = kanji
 window.apiKanji = apiKanji
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById("root")
     const store = ConfigureStore();
