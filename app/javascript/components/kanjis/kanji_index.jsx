@@ -23,7 +23,7 @@ class KanjiIndex extends React.Component {
         })
 
         return (
-            <ul>
+            <ul className={"kanji-list"}>
                 {listKanji}
             </ul>
         )
