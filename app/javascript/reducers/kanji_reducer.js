@@ -7,9 +7,9 @@ const kanjiReducer = (state = {}, action) => {
         case RECEIVE_KANJIS:
             return action.kanjis
         case RECEIVE_ONE_KANJI:
-            // Havent implemented single kanji get yet
-            let newObject = Object.values(action.kanji)
-            return Object.assign({}, state)
+            // let newObject = Object.values(action.kanji)
+            return Object.assign({}, state, {[action.kanji.id]: action.kanji})
+
         default:
             return state;
     }

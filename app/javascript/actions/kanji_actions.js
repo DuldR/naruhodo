@@ -24,4 +24,10 @@ export const fetchKanjis = () => (dispatch) => {
     })
 }
 
+export const fetchOneKanji = (kanjiId) => (dispatch) => {
+    return APIUtil.getOneKanji(kanjiId).then(kanji => {
+        dispatch(receiveOneKanji(kanji))
+    })
+}
+
 
